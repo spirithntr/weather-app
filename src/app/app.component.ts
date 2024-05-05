@@ -9,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'weather-app';
+
+  constructor() {
+    console.log((import.meta as any).env.VITE_SOME_KEY)
+    console.log((import.meta as any).env)
+  }
 }
